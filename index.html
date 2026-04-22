@@ -210,26 +210,8 @@
 <body>
   <div id="app">
     <nav class="app-nav" data-level="2"></nav>
-    <main>
-      <div class="sidebar">
-        <div class="sidebar-nav">
-          <ul>
-            <li><a href="#/">🏠 首页</a></li>
-            <li><a href="#/docs/stage1">📐 阶段 1：线性代数 (Day 1-10)</a></li>
-            <li><a href="#/docs/stage2">📊 阶段 2：微积分与优化 (Day 11-20)</a></li>
-            <li><a href="#/docs/stage3">🎲 阶段 3：概率论 (Day 21-30)</a></li>
-            <li><a href="#/docs/stage4">📈 阶段 4：统计与推断 (Day 31-40)</a></li>
-            <li><a href="#/docs/stage5">📡 阶段 5：信息论 (Day 41-45)</a></li>
-            <li><a href="#/docs/stage6">🤖 阶段 6：综合应用 (Day 46-60)</a></li>
-            <li><a href="#/docs/learning-path">🗺️ 学习路径</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="content">
-        <div class="markdown-section" data-markdown></div>
-      </div>
-    </main>
   </div>
+</body>
 
   <!-- Docsify -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -250,14 +232,16 @@
   <script>
     window.$docsify = {
       name: '📐 AI 数学基础',
-      repo: '',
+      repo: 'https://github.com/cloudyan/ai-math-docs',
       homepage: 'README.md',
       loadSidebar: '_sidebar.md',
       loadNavbar: false,
       loadFooter: false,
-      subMaxLevel: 3,
-      maxLevel: 4,
+      subMaxLevel: 2,
+      maxLevel: 3,
       auto2top: true,
+      sidebarDisplayLevel: 1,
+      catchNoMatchesError: true,
       copyCode: {
         buttonText: '复制',
         errorText: '错误',
