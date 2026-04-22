@@ -121,3 +121,10 @@
 - [完整学习路径](docs/learning-path)
 - [知识依赖图](docs/learning-path#知识依赖图)
 - [推荐教材](docs/learning-path#推荐教材)
+
+---
+
+## 📚 专题文档
+
+- [Softmax 详解](docs/softmax) - 从 Logits 到概率的完整机制
+- [LLM 记忆三种形式](docs/llm-memory) - 参数记忆 vs 上下文记忆 vs 外部记忆
