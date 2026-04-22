@@ -1,6 +1,6 @@
 # 学习路径与知识依赖图
 
-_60 天数学卡片体系的完整知识图谱_
+_70 天数学+LLM 原理卡片体系的完整知识图谱_
 
 ---
 
@@ -45,22 +45,34 @@ graph TD
         D56 --> D57[Day 57<br>位置编码]
     end
     
+    subgraph S7[阶段 7：LLM 原理]
+        D56 --> D63[Day 63<br>Q-K-V 详解]
+        D61[Day 61<br>参数记忆] --> D66[Day 66<br>微调 LoRA]
+        D62[Day 62<br>上下文记忆] --> D68[Day 68<br>少样本学习]
+        D63 --> D64[Day 64<br>Prompt 工程]
+        D65[Day 65<br>RAG] --> D64
+        D67[Day 67<br>灾难性遗忘] --> D66
+        D69[Day 69<br>链式思维] --> D70[Day 70<br>Prompt 实战]
+    end
+    
     S1 --> S2
     S2 --> S3
     S3 --> S4
     S4 --> S5
     S5 --> S6
+    S6 --> S7
     
     D10 -.-> D38
     D31 -.-> D47
     D43 -.-> D46
+    D56 -.-> D63
 ```
 
 ---
 
 ## 📚 学习路径建议
 
-### 🎯 标准路径（60 天）
+### 🎯 标准路径（70 天）
 
 | 阶段 | Day 范围 | 天数 | 每天投入 | 总时长 |
 |------|---------|------|---------|--------|
@@ -70,66 +82,21 @@ graph TD
 | 阶段 4 | Day 31-40 | 10 天 | 30-60 分钟 | 5-10 小时 |
 | 阶段 5 | Day 41-45 | 5 天 | 30-60 分钟 | 2.5-5 小时 |
 | 阶段 6 | Day 46-60 | 15 天 | 30-60 分钟 | 7.5-15 小时 |
+| 阶段 7 | Day 61-70 | 10 天 | 30-60 分钟 | 5-10 小时 |
 
-**总计**：60 天，30-50 小时
-
----
-
-### 🚀 加速路径（30 天）
-
-| 天数 | 学习内容 | 知识点 |
-|------|---------|--------|
-| Day 1 | 向量与矩阵 | Day 1-2 |
-| Day 2 | 线性变换与行列式 | Day 3-4 |
-| Day 3 | 逆矩阵与特征值 | Day 5-6 |
-| Day 4 | 特征分解与 SVD | Day 7-8 |
-| Day 5 | PCA 与范数 | Day 9-10 |
-| Day 6 | 导数与梯度 | Day 11-12 |
-| Day 7 | 链式法则与泰勒 | Day 13-14 |
-| Day 8 | 梯度下降与牛顿法 | Day 15-16 |
-| Day 9 | 拉格朗日与凸优化 | Day 17-18 |
-| Day 10 | 动量与 Adam | Day 19-20 |
-| Day 11 | 概率与贝叶斯 | Day 21-22 |
-| Day 12 | 随机变量与分布 | Day 23-24 |
-| Day 13 | 期望方差与协方差 | Day 25-26 |
-| Day 14 | 大数定律与中心极限 | Day 27-28 |
-| Day 15 | 联合分布与条件独立 | Day 29-30 |
-| Day 16 | MLE 与 MAP | Day 31-32 |
-| Day 17 | 贝叶斯推断与假设检验 | Day 33-34 |
-| Day 18 | 置信区间与回归 | Day 35-36 |
-| Day 19 | 过拟合与正则化 | Day 37-38 |
-| Day 20 | 交叉验证与 Bootstrap | Day 39-40 |
-| Day 21 | 自信息与熵 | Day 41-42 |
-| Day 22 | 交叉熵与 KL 散度 | Day 43-44 |
-| Day 23 | 互信息 | Day 45 + 复习 |
-| Day 24 | softmax 与最小二乘 | Day 46-47 |
-| Day 25 | sigmoid 与拉普拉斯平滑 | Day 48-49 |
-| Day 26 | EM 算法与马尔可夫链 | Day 50-51 |
-| Day 27 | HMM 与蒙特卡洛 | Day 52-53 |
-| Day 28 | MCMC 与变分推断 | Day 54-55 |
-| Day 29 | 注意力与位置编码 | Day 56-57 |
-| Day 30 | 归一化、初始化、学习率 | Day 58-60 |
+**总计**：70 天，35-55 小时
 
 ---
 
-### 🐢 深入路径（90 天）
+### 🚀 加速路径（35 天）
 
-**额外时间用于**：
+每 2 天学习一个知识点，适合有基础的学习者。
 
-1. **推导练习**：每张卡片的关键公式手动推导
-2. **代码实现**：用 NumPy 实现核心算法
-3. **扩展阅读**：阅读教材和论文
-4. **习题练习**：完成思考题
+---
 
-**推荐资源**：
+### 🐢 深入路径（105 天）
 
-| 主题 | 资源 |
-|------|------|
-| 线性代数 | Gilbert Strang MIT 18.06 |
-| 微积分 | 3Blue1Brown 微积分本质 |
-| 概率论 | 《概率论与数理统计》陈希孺 |
-| 优化 | 《Convex Optimization》Boyd |
-| 信息论 | 《Elements of Information Theory》Cover |
+每知识点 1.5 天，额外时间用于推导练习和代码实现。
 
 ---
 
@@ -137,12 +104,16 @@ graph TD
 
 | 知识点 | 前置依赖 | 后续应用 |
 |--------|---------|---------|
-| **Day 38 正则化** | Day 10 范数、Day 37 过拟合 | Day 59 初始化 |
+| **Day 38 正则化** | Day 10 范数、Day 37 过拟合 | Day 59 初始化、Day 67 灾难性遗忘 |
 | **Day 46 softmax** | Day 43 交叉熵、Day 13 链式法则 | Day 56 注意力 |
 | **Day 47 最小二乘** | Day 31 MLE、Day 24 高斯分布 | Day 58 归一化 |
 | **Day 50 EM 算法** | Day 31 MLE、Day 29 联合分布 | Day 55 变分推断 |
 | **Day 55 变分推断** | Day 44 KL 散度、Day 50 EM | - |
-| **Day 56 注意力** | Day 46 softmax、Day 1-2 向量矩阵 | - |
+| **Day 56 注意力** | Day 46 softmax、Day 1-2 向量矩阵 | Day 57 位置编码、Day 63 Q-K-V |
+| **Day 63 Q-K-V** | Day 56 注意力、Day 1 向量点积 | Day 64 Prompt 工程 |
+| **Day 64 Prompt** | Day 63 Q-K-V、Day 42 熵 | Day 70 Prompt 实战 |
+| **Day 65 RAG** | Day 1 向量相似度、Day 9 PCA | Day 64 Prompt 工程 |
+| **Day 66 LoRA** | Day 15 梯度下降、Day 5 伪逆 | Day 67 灾难性遗忘 |
 
 ---
 
@@ -164,7 +135,11 @@ graph TD
 - 《All of Statistics》Larry Wasserman
 
 ### 信息论
-- 《Elements of Information Theory》Thomas Cover
+- 《Elements of Information Theory》Cover
+
+### LLM 原理
+- 《Attention Is All You Need》Transformer 原论文
+- 《Language Models are Few-Shot Learners》GPT-3 论文
 
 ---
 

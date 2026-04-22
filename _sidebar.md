@@ -100,6 +100,22 @@
 
 ---
 
+## 阶段 7：LLM 原理与 Prompt 工程
+
+- [概览](docs/stage7)
+- [Day 61: 参数记忆](docs/stage7?id=day-61-参数记忆)
+- [Day 62: 上下文记忆](docs/stage7?id=day-62-上下文记忆)
+- [Day 63: Q-K-V 机制详解](docs/stage7?id=day-63-q-k-v-机制详解)
+- [Day 64: Prompt 工程原理](docs/stage7?id=day-64-prompt-工程原理)
+- [Day 65: RAG 原理](docs/stage7?id=day-65-rag-原理)
+- [Day 66: 微调与 LoRA](docs/stage7?id=day-66-微调与-lora)
+- [Day 67: 灾难性遗忘](docs/stage7?id=day-67-灾难性遗忘)
+- [Day 68: 少样本学习](docs/stage7?id=day-68-少样本学习)
+- [Day 69: 链式思维](docs/stage7?id=day-69-链式思维)
+- [Day 70: Prompt 设计实战](docs/stage7?id=day-70-prompt-设计实战)
+
+---
+
 ## 🗺️ 学习路径
 
 - [完整学习路径](docs/learning-path)
